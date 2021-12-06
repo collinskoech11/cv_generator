@@ -15,25 +15,27 @@ section{
 .header-container{
     display: flex;
     width:100%;
-    height:70px;
+    height:auto;
 }
 .fixed{
     position: fixed;
 }
 .header-container .title{
     width:50%;
-    height:72%;
-    padding:20px;
+    height:70px;
     text-align:left;
     padding-left:100px;
     background-color:rgb(0,0,10);
     color:linear-gradient(90deg, rgba(2,16,27,1) 0%, rgba(88,63,153,1) 22%, rgba(166,67,229,1) 48%, rgba(138,88,228,1) 63%, rgba(75,43,126,1) 77%, rgba(0,11,255,1) 100%);
 }
+.header-container .title h1{
+    margin-top:20px;
+    margin-left: 20px;
+}
 .header-container .title-buttons{
     width:50%;
-    height:100%;
+    height:70px;
     background-color:rgb(0,0,10);
-    padding:10px;
     text-align:left;
     color:rgb(155,155,250)
 }
