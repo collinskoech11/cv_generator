@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,8 +7,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="{% static './css/style.css' %}">
 </head>
 <body>
-    <h1>Enter Details</h1>
+    <section class="HeaderContainer">
+        <div class="header-container">
+            <div class="title"><h1 class="mb-4">CV Generator</h1></div>
+            <div class="title-buttons">
+                <a href="/Contact"><button>Edit Details</button></a>
+                <a href="/SignIn"><button class="sign">Download pdf</button></a>
+            </div>
+            <div class="title-nav-btn" id="navigate">
+                <div class="nav-line"></div>   
+                <div class="nav-line"></div>  
+                <div class="nav-line"></div>           
+            </div>
+        </div>
+    </section>
+    <section class="form-container">
+
+    </section>
+    <section class="Footer-container">
+        <div class="footer-container">
+            <div class="footer-title">
+                <h2>Live Summary</h2>
+            </div>
+            <div class="footer-sub">
+                <div class="footer-sub-align">
+                    <div class="footer-sub-sub">
+                        <b>Product </b><br> <br><br>
+
+                        Features <br><br>
+                        Security <br><br>
+                        Business<br><br>
+                        Case studies<br><br>
+                        Pricing<br><br>
+                        Resources<br><br>
+                    </div>
+                    <div class="footer-sub-sub">
+                        <b>Explore</b> <br> <br><br>
+
+                        Developer API <br><br>
+                        Partners <br><br>
+                        Electron<br><br>
+                        Desktop app<br><br>
+                        Mobile app<br><br>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./js/index.js"></script>
 </body>
 </html>
