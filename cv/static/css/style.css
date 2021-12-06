@@ -8,6 +8,10 @@ body{
 * form{
     display: block;
 }
+section{
+    max-width:100vw;
+    overflow-x:hidden;
+}
 .header-container{
     display: flex;
     width:100%;
@@ -170,7 +174,7 @@ body{
     border-top:3px solid rgb(155,155,250);
 }
 .form-container{
-    width:100%;
+    width:98%;
     padding:2%;
     height:auto;
 }
