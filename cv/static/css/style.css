@@ -5,6 +5,9 @@ body{
     overflow-x: hidden;
     font-family:sans-serif;
 }
+* form{
+    display: block;
+}
 .header-container{
     display: flex;
     width:100%;
@@ -165,6 +168,29 @@ body{
 }
 .footer-container {
     border-top:3px solid rgb(155,155,250);
+}
+.form-container{
+    width:100%;
+    padding:2%;
+    height:auto;
+}
+.form-container form{
+    width:90%;
+    height:auto;
+}
+.form-container form input{
+    width:100%;
+    background-color: black;
+    margin-bottom:10px;
+    margin-top:10px;
+    height:40px;
+    border:3px solid rgb(155,155,250, 0.2);
+    border-radius:5px;
+}
+.form-container form label{
+    width:100%;
+    color:rgb(155,155,250);
+    height:20px;
 }
 @media screen and (max-width:1000px){
     .footer-container{
