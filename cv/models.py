@@ -11,7 +11,7 @@ class Personal(models.Model):
     PhoneNumber = models.CharField(max_length=200)
     PersonalSummary = models.CharField(max_length=400)
 
-class Experiece(models.Model):
+class Experience(models.Model):
     def __str__(self):
         return self.Role
     Role = models.CharField(max_length = 200)
