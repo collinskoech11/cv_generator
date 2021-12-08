@@ -13,7 +13,7 @@ class Personal(models.Model):
 
 class Experience(models.Model):
     def __str__(self):
-        return self.Role
+        return self.ExperienceRole
     ExperienceRole = models.CharField(max_length = 200)
     ExperienceCompany = models.CharField(max_length=200)
     ExperienceTimeline = models.CharField(max_length=200)
