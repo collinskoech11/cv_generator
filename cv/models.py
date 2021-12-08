@@ -6,10 +6,10 @@ class Personal(models.Model):
         return self.FullName
     FullName = models.CharField(max_length=200)
     location = models.CharField(max_length=200)
-    email = models.CharField(max_length=200)
-    social = models.CharField(max_length=200)
-    PhoneNumber = models.CharField(max_length=200)
-    PersonalSummary = models.CharField(max_length=400)
+    Email = models.CharField(max_length=200)
+    Socials = models.CharField(max_length=200)
+    Number = models.CharField(max_length=200)
+    Summary = models.CharField(max_length=400)
 
 class Experience(models.Model):
     def __str__(self):
@@ -17,6 +17,7 @@ class Experience(models.Model):
     ExperienceRole = models.CharField(max_length = 200)
     ExperienceCompany = models.CharField(max_length=200)
     ExperienceTimeline = models.CharField(max_length=200)
+    ExperienceDescription = models.CharField(max_length=200)
 
 class Education(models.Model):
     EducationSchool = models.CharField(max_length=200)

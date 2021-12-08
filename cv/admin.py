@@ -4,17 +4,17 @@ from .models import *
 class PersonalAdmin(admin.ModelAdmin):
     list_display = ('FullName',)
 
-class ExperienceAdmin(admin.Model):
-    list_display = ('Role,')
+class ExperienceAdmin(admin.ModelAdmin):
+    list_display = ('ExperienceRole',)
 
-class EducationAdmin(admin.Model):
-    list_display = ('SchoolName',)
+class EducationAdmin(admin.ModelAdmin):
+    list_display = ('EducationSchool',)
 
-class SkillAdmin(admin.Model):
+class SkillAdmin(admin.ModelAdmin):
     list_display = ('Skills',)
 
-class AwardAdmin(admin.Model):
-    list_display = ('Awards')
+class AwardAdmin(admin.ModelAdmin):
+    list_display = ('Awards',)
 
 
 admin.site.register(Personal,PersonalAdmin)
