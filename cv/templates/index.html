@@ -49,34 +49,39 @@
     <section class="form-container">
         <div class="form-container">
             <form action="" method="POST" name="details">
+                { csrf_token }
                 <h2>Personal Details</h2>
-                <label for="name">Full Names</label><input type="text" name="name"><br/>
-                <label for="location">Preffered work location</label><input type="text" name="location"><br/>
-                <label for="email">Email</label><input type="text" name="email"><br/>
-                <label for="social">Socials</label><input type="text" name="social"><br/>
-                <label for="Number">Phone Number</label><input type="text" name="Number"><br/>
-                <label for="summary">Personal Summary</label><input type="text" name="summary"><br/>
+                <label for="name">Full Names</label><input type="text" name="FullName" id=""><br/>
+                <label for="location">Preffered work location</label><input type="text" name="location" id="location"><br/>
+                <label for="email">Email</label><input type="text" name="email" id="email"><br/>
+                <label for="social">Socials</label><input type="text" name="social" id="social"><br/>
+                <label for="Number">Phone Number</label><input type="text" name="Number" id="Number"><br/>
+                <label for="summary">Personal Summary</label><input type="text" name="summary" id="summary"><br/>
             </form>
             <form action="" method="POST" name="experience">
+                { csrf_token }
                 <h2>Work Experience</h2>
-                <label for="experiencerole">Role</label><input type="text" name="experiencerole"><br/>
-                <label for="experiencecompany">Company Name</label><input type="text" name="experiencecompany"><br/>
-                <label for="experiencetimeline">TimeLine</label><input type="text" name="experiencetimeline"><br/>
-                <label for="experiencedescription">Description</label><input type="text" name="experiencedescription"><br/>
+                <label for="experiencerole">Role</label><input type="text" name="experiencerole" id="experiencerole"><br/>
+                <label for="experiencecompany">Company Name</label><input type="text" name="experiencecompany" id="experiencecompany"><br/>
+                <label for="experiencetimeline">TimeLine</label><input type="text" name="experiencetimeline" id="experiencetimeline"><br/>
+                <label for="experiencedescription">Description</label><input type="text" name="experiencedescription" id="experiencedescription"><br/>
             </form>
             <form action="">
+                { csrf_token }
                 <h2>Education</h2>
-                <label for="educationschool">School Name</label><input type="text" name="educationschool"><br/>
-                <label for="educationcourse">Course</label><input type="text" name="educationcourse"><br/>
-                <label for="educationtimeline">TimeLine</label><input type="text" name="educationtimeline"><br/>
+                <label for="educationschool">School Name</label><input type="text" name="educationschool" id="educationschool"><br/>
+                <label for="educationcourse">Course</label><input type="text" name="educationcourse" id="educationcourse"><br/>
+                <label for="educationtimeline">TimeLine</label><input type="text" name="educationtimeline" id="educationtimeline"><br/>
             </form>
             <form action="" method="POST" name="skills">
+                { csrf_token }
                 <h2>skills</h2>
-                <label for="skills">Skill</label><input type="text" name="skills"><br/>
+                <label for="skills">Skill</label><input type="text" name="skills" id="skills"><br/>
             </form>
             <form action="">
+                { csrf_token }
                 <h2>Honours &amp; awards</h2>
-                <label for="awards">Awards</label><input type="text" name="awards"><br/>
+                <label for="awards">Awards</label><input type="text" name="awards" id="awards"><br/>
             </form>
         
         </div>

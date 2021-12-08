@@ -14,14 +14,14 @@ class Personal(models.Model):
 class Experience(models.Model):
     def __str__(self):
         return self.Role
-    Role = models.CharField(max_length = 200)
-    CompanyName = models.CharField(max_length=200)
-    Timeline = models.CharField(max_length=200)
+    ExperienceRole = models.CharField(max_length = 200)
+    ExperienceCompany = models.CharField(max_length=200)
+    ExperienceTimeline = models.CharField(max_length=200)
 
 class Education(models.Model):
-    SchoolName = models.CharField(max_length=200)
-    Course = models.CharField(max_length=200)
-    Timeline = models.CharField(max_length=200)
+    EducationSchool = models.CharField(max_length=200)
+    EducationCourse = models.CharField(max_length=200)
+    EducationTimeline = models.CharField(max_length=200)
 
 class Skill(models.Model):
     Skills = models.CharField(max_length=200)
