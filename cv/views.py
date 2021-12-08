@@ -18,8 +18,8 @@ def index(request):
         EducationSchool = request.POST.get('educationschool',"")
         EducationCourse = request.POST.get('educationcourse',"")
         EducationTimeline = request.POST.get('educationtimeline',"")
-        Skill = request.POST.get('skills',"")
-        Award= request.POST.get('awards',"")
+        #Skill = request.POST.get('skills',"")
+        #Award= request.POST.get('awards',"")
 
         describe = Personal(FullName=FullName,location=location, Email=Email, Socials=Socials, Number=Number, Summary=Summary)
         describe.save()
@@ -27,10 +27,10 @@ def index(request):
         exp.save()
         edu = Education(EducationSchool=EducationSchool, EducationCourse=EducationCourse, EducationTimeline=EducationTimeline)
         edu.save()
-        ski = Skill(Skills=Skill)
-        ski.save()
-        aw = Award(Awards=Award)
-        aw.save()
+        #ski = Skill(Skills=Skill)
+        #ski.save()
+        #aw = Award(Awards=Award)
+        ##aw.save()
 
     return render(request, 'index.html')
 
