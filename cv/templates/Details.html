@@ -54,16 +54,14 @@
         {{ description.Socials }}<br/>
         {{ description.Numbaer }}<br/>
         {{ description.Summary }}<br/>
-       {% endfor %} 
-       {% for experience in experience_objects %}
-        {{ experience.ExperienceRole }}<br/>
-        {{ experience.ExperienceTimeline }}<br/>
-        {{ experience.ExperienceDescription }}<br/>
-       {% endfor %}
-       {% for education in education_objects %}
-        {{ education.EducationSchool }}<br/>
-        {{ education.EducationCourse }}<br/>
-        {{ education.EducationCourse }}<br/>
+        {{ description.ExperienceRole }}<br/>
+        {{ description.ExperienceTimeline }}<br/>
+        {{ description.ExperienceDescription }}<br/>
+        {{ description.EducationSchool }}<br/>
+        {{ description.EducationCourse }}<br/>
+        {{ description.EducationCourse }}<br/>
+        {{ description.Skillset }}<br/>
+        {{ description.Awarding }}<br/>
        {% endfor %}
     </section>
     <section class="Footer-container">
