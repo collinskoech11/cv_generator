@@ -8,6 +8,7 @@ body{
 * form{
     display: block;
 }
+
 section{
     max-width:100vw;
     overflow-x:hidden;
@@ -163,7 +164,22 @@ section{
     margin:auto;
     color:rgb(155,155,250);
 }
-
+.cv-container{
+    width:60%;
+    height:auto;
+    padding:50px;
+    padding-left:100px;
+    padding-right:100px;
+    border:1px solid white;
+    margin-top:50px;
+    margin-left:5%;
+}
+.cv-container h1{
+    font-size:2.5em;
+}
+.cv-container h2{
+    font-size:2em;
+}
 .footer-container{
     display:flex;
     padding:75px;
