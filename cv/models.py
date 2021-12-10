@@ -10,7 +10,7 @@ class Personal(models.Model):
     Socials = models.CharField(max_length=200)
     Number = models.CharField(max_length=200)
     Summary = models.CharField(max_length=400)
-    ExperienceRole = models.CharField(max_length = 200)
+    ExperienceRole = models.CharField(max_length = 200, null=True)
     ExperienceCompany = models.CharField(max_length=200)
     ExperienceTimeline = models.CharField(max_length=200)
     ExperienceDescription = models.CharField(max_length=200)
@@ -18,7 +18,7 @@ class Personal(models.Model):
     EducationCourse = models.CharField(max_length=200)
     EducationTimeline = models.CharField(max_length=200)
     Skills = models.CharField(max_length=200)
-    Awards = models.CharField(max_length=200)
+    Awards = models.CharField(max_length=200, null=True, blank=True)
     
 
 """class Experience(models.Model):
