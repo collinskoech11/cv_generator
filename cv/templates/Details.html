@@ -48,19 +48,24 @@
     </section>
     <section class="BodyHtml">
        {% for description in description_objects %}
-        {{ description.FullName }}<br/>
+        <h1>{{ description.FullName }}</h1><br/>
         {{ description.location }}<br/>
         {{ description.Email }}<br/>
         {{ description.Socials }}<br/>
         {{ description.Numbaer }}<br/>
+        <h2>Personal Summary</h2>
         {{ description.Summary }}<br/>
+        <h2>Work Experience</h2>
         {{ description.ExperienceRole }}<br/>
         {{ description.ExperienceTimeline }}<br/>
         {{ description.ExperienceDescription }}<br/>
+        <h2>Education</h2>
         {{ description.EducationSchool }}<br/>
         {{ description.EducationCourse }}<br/>
         {{ description.EducationCourse }}<br/>
+        <h2>Skills</h2>
         {{ description.Skillset }}<br/>
+        <h2>Awardsgit</h2>
         {{ description.Awarding }}<br/>
        {% endfor %}
     </section>
