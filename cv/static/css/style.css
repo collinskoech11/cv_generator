@@ -200,6 +200,12 @@ section{
     width:90%;
     height:auto;
 }
+.form-container form button{
+    border:3px solid rgb(155,155,250); 
+    border-radius: 5px;
+    padding-left:15px;
+    padding-right:15px;
+}
 .form-container form input{
     width:100%;
     background-color: white;
