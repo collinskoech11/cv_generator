@@ -14,9 +14,9 @@ class Personal(models.Model):
     ExperienceCompany = models.CharField(max_length=200, null=True, blank=True)
     ExperienceTimeline = models.CharField(max_length=200, null=True, blank=True)
     ExperienceDescription = models.CharField(max_length=200, null=True, blank=True)
-    ExperienceRoleOne = models.CharField(max_length = 200, null=True)
+    """ExperienceRoleOne = models.CharField(max_length = 200, null=True)
     ExperienceCompanyOne = models.CharField(max_length=200, null=True, blank=True)
-    ExperienceTimelineOne = models.CharField(max_length=200, null=True, blank=True)
+    ExperienceTimelineOne = models.CharField(max_length=200, null=True, blank=True)"""
     ExperienceDescriptionOne = models.CharField(max_length=200, null=True, blank=True)
     EducationSchool = models.CharField(max_length=200, null=True, blank=True)
     EducationCourse = models.CharField(max_length=200, null=True, blank=True)
