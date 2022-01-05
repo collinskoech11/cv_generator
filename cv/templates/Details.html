@@ -56,17 +56,17 @@
             {{ description.Number }}<br/><br/>
             <h2>Personal Summary</h2>
             {{ description.Summary }}<br/>
-            <h2>Work Experience</h2>
+            {% if description.Expeerience %}<h2>Work Experience</h2>{% endif %}
             {{ description.ExperienceRole }}<br/>
             {{ description.ExperienceTimeline }}<br/>
             {{ description.ExperienceDescription }}<br/>
-            <h2>Education</h2>
+            {% if description.EducationSchool %}<h2>Education</h2>{% endif %}
             {{ description.EducationSchool }}<br/>
             {{ description.EducationCourse }}<br/>
             {{ description.EducationCourse }}<br/>
-            <h2>Skills</h2>
+            {% if description.Skillset %}<h2>Skills</h2>{% endif %}
             {{ description.Skillset }}<br/>
-            <h2>Awards</h2>
+            {% if description.Awardng %}<h2>Awards</h2>{% endif %}
             {{ description.Awarding }}<br/>
         {% endfor %}
         </div>
