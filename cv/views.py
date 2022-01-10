@@ -11,15 +11,7 @@ def index(request):
         Socials = request.POST.get('social',"")
         Number = request.POST.get('Number',"")
         Summary = request.POST.get('summary',"")
-        ExperienceRole = request.POST.get('experiencerole',"")
-        Experiencecompany = request.POST.get('experiencecompany',"")
-        ExperienceTimeline = request.POST.get('experiencetimeline',"")
-        ExperienceDescription = request.POST.get('experiencedescription',"")
-        EducationSchool = request.POST.get('educationschool',"")
-        EducationCourse = request.POST.get('educationcourse',"")
-        EducationTimeline = request.POST.get('educationtimeline',"")
-        Skillset = request.POST.get('skills',"")
-        Awarding= request.POST.get('awards',"")
+       
 
         describe = Personal(
             FullName=FullName,
@@ -28,15 +20,7 @@ def index(request):
             Socials=Socials, 
             Number=Number, 
             Summary=Summary,
-            ExperienceRole=ExperienceRole,
-            ExperienceCompany=Experiencecompany, 
-            ExperienceTimeline=ExperienceTimeline, 
-            ExperienceDescription=ExperienceDescription,
-            EducationSchool=EducationSchool, 
-            EducationCourse=EducationCourse, 
-            EducationTimeline=EducationTimeline,
-            Skills=Skillset,
-            Awards=Awarding
+           
             )
         describe.save()
         """ exp = Experience(ExperienceRole=ExperienceRole,ExperienceCompany=Experiencecompany, ExperienceTimeline=ExperienceTimeline, ExperienceDescription=ExperienceDescription)
@@ -49,6 +33,39 @@ def index(request):
         aw.save()"""
 
     return render(request, 'index.html')
+def Experience(requet):
+    if request.method == "POST":
+        ExperienceRole = request.POST.get('experiencerole',"")
+        Experiencecompany = request.POST.get('experiencecompany',"")
+        ExperienceTimeline = request.POST.get('experiencetimeline',"")
+        ExperienceDescription = request.POST.get('experiencedescription',"")
+        
+        exp = ExperienceDb(
+            ExperienceRole=ExperienceRole,
+            ExperienceCompany=Experiencecompany, 
+            ExperienceTimeline=ExperienceTimeline, 
+            ExperienceDescription=ExperienceDescription,
+        )
+        exp.save()
+    return render(request, 'EXperience.html')
+
+def Education(requet):
+    if request.method =="POST":
+        EducationSchool = request.POST.get('educationschool',"")
+        EducationCourse = request.POST.get('educationcourse',"")
+        EducationTimeline = request.POST.get('educationtimeline',"")
+        Skillset = request.POST.get('skills',"")
+        Awarding= request.POST.get('awards',"")
+        
+        edu = EducationDb(
+            EducationSchool=EducationSchool, 
+            EducationCourse=EducationCourse, 
+            EducationTimeline=EducationTimeline,
+            Skills=Skillset,
+            Awards=Awarding
+        )
+        edu.save()
+    return render(request, 'Education.html')
 
 def Details(request):
     description_objects = Personal.objects.all()
