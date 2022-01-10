@@ -20,5 +20,7 @@ from cv import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index),
+    path('Experience', views.Experience),
+    path('Education', views.Education),
     path('Details', views.Details)
 ]
